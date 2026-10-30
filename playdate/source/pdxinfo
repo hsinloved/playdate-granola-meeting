@@ -1,0 +1,6 @@
+name=Granola Remote
+author=Celeste
+description=Start a Granola meeting note on your Mac from your Playdate.
+bundleID=com.celeste.granolaremote
+version=0.1.0
+buildNumber=1

@@ -1,0 +1,23 @@
+{
+  "bind": "0.0.0.0",
+  "port": 8787,
+  "token": "change-me-to-something-random",
+  "app_name": "Granola",
+  "activate_delay_seconds": 0.8,
+  "actions": {
+    "start": { "type": "keystroke", "key": "n", "modifiers": ["command", "shift"] },
+    "stop": { "type": "click_at", "from": "top-right", "x": -734, "y": 132 }
+  },
+  "_notes": {
+    "start": "Shift+Command+N is Granola's 'New note' shortcut, and a new note starts transcribing on its own.",
+    "stop": "Granola has no stop shortcut, so this clicks the stop control. These numbers fit one particular screen and window size. Measure your own with: python3 granola_helper.py --where stop"
+  },
+  "_examples": {
+    "menu": { "type": "menu", "menu": "File", "item": "New Note" },
+    "keystroke": { "type": "keystroke", "key": "n", "modifiers": ["command", "shift"] },
+    "url": { "type": "url", "url": "granola://example-if-a-url-scheme-exists" },
+    "button": { "type": "button", "text": "Quick Note" },
+    "click_at": { "type": "click_at", "from": "top-right", "x": -90, "y": 45 },
+    "activate": { "type": "activate" }
+  }
+}
